@@ -328,48 +328,65 @@ a.icons:hover{
     color: white;
 }
 
-            /*====PROJECT====*/
+/*====PROJECT====*/
 
 .project-content-wrap{
     margin: 75px 0 30px 0;
     letter-spacing: .3em;
+}
 
-}
-.project-content-wrap h1{
-    color:#6D173E;
-}
-.projects-website{
-    margin:10px 0px 20px 0px;
-    border:5px solid #6D173E;
-    height:200px;
-}
-.projects-website img{
-    border:2px solid #6D173E;
-    width: 100%;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: .6s ease;
-      filter:blur(5px); ;
-}
-.projects-website p{
-    position: absolute;
-    top: 50%;
-    text-align: center;
-    transform: translateY(-50%);
-}
-.projects-website img:hover{
+.projects-website a{
+    transition: ease .3s;
     filter: none;
-  
+    text-decoration: none;
 }
+
+.projects-website a:hover{
+     filter: blur(2px);
+}
+
+
+.projects-website a p.overlay{
+    text-align: center;
+}
+
+.projects-website{
+    padding: 1%;
+}
+
+.projects-website img{
+    border:1px solid black;
+}
+
 .mobile-project{
     display: none;
 }
+
+/*====ABOUT====*/
+
+.content-resume{
+   margin-top: 15%;
+   margin-bottom: 10%;
+   background-color: #6D173E;
+}
+
+.content-resume p, .content-resume h1{
+    color: white;
+    text-align: center;
+}
+
+.content-resume h1{
+    padding: 50px 15px 20px 15px;
+}
+
+.content-resume p{
+    padding:30px
+}
+
             /*====BOTTOM NAV====*/
 .bottom3-nav{
     background-color:black;
     filter: opacity(80%);
-    margin-top: 90px;
     padding: 30px 0;
     width: 100%
     position: fixed;
